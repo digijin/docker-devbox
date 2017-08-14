@@ -19,4 +19,6 @@ RUN add-apt-repository \
 RUN apt-get update
 RUN apt-get install -y docker-ce
 
+WORKDIR /opt
+EXPOSE 8080
 ENTRYPOINT bash
